@@ -1,0 +1,27 @@
+<h1>Password generator</h1>
+<form action="{% url 'password' %}">
+    <div>
+        <select name="length" id="">
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+        </select>
+    </div>
+    <div>
+        <input type="checkbox" name="uppercase" id="">Uppercase
+    </div>
+    <div>
+        <input type="checkbox" name="number" id="">Number
+    </div>
+    <div>
+        <input type="checkbox" name="special" id="">Specials
+    </div>
+    
+    <input type="submit" value="Submit">
+
+</form>
+
+<a href="{% url 'about' %}">About</a>
